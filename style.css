@@ -63,3 +63,11 @@ h1{
 
 }
 
+@media (min-width:678px) {
+    .foto_container {
+        grid-template-columns: repeat(4, 1rf);
+    }
+    .foto_item:nth-child(8) {
+         grid-row-start: 3;
+    }
+}
