@@ -11,9 +11,9 @@ body{
 h1{
     color: #444;
     text-align: center;
-
 }
- /* estilos de galeria */
+
+ /* ! estilos de galeria */
 
 .foto_container{
     display: grid;
@@ -21,8 +21,7 @@ h1{
     grid-auto-rows: 150px;
     padding: 20px;
     grid-gap: 10px;
-    /* grid-template-rows: repeat(3 1fr); */
-
+    grid-template-rows: repeat(3 1fr);
 }
 
  .foto_item {
@@ -33,34 +32,28 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* position: relative; */
 }
 .foto_title {
     position: absolute;
     bottom: 0;
     color: white;
     width: 100%;
-    
 }
 
  .foto_item:nth-child(4) {
     grid-column-start: span 2;
- 
 }
 
 .foto_item:nth-child(5) {
     grid-row-start: span 2;
-
 }
 
 .foto_item:nth-child(9) {
     grid-column-start: span 2;
-
 }
 
 .foto_item:nth-child(10) {
     grid-column-start: span 2;
-
 }
 
 @media (min-width:678px) {
@@ -68,6 +61,13 @@ h1{
         grid-template-columns: repeat(4, 1rf);
     }
     .foto_item:nth-child(8) {
-         grid-row-start: 3;
+         grid-row-start: 5;
+    }
+    .foto_item:nth-child(7) {
+         grid-row-start: span 1;
+    }
+    .foto_item:nth-child(10) {
+         grid-row-start: 5 ;
     }
 }
+   
